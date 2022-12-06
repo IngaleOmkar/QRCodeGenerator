@@ -7,4 +7,4 @@ app = flask.Flask(__name__)
 def index():
     return flask.render_template('index.html')
 
-app.run(host='0.0.0.0', port=5000, debug=True)
+app.run(host='0.0.0.0', port=5000)

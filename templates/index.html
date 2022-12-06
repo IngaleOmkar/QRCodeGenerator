@@ -47,11 +47,14 @@
         </div>
     </div>
 
-    <div id="qrcode"></div>
+    <div class="center-screen">
+        <div id="qrcode" style="width: 200px; height: 200px"></div>
+    </div>
 
     <script>
        document.getElementById("generate").onclick = function() {
             var inputText = document.getElementById("inputText").value;
+            document.getElementById("qrcode").innerHTML = "";
             var qrcode = new QRCode("qrcode", {
                 text: inputText,
                 width: 200,
